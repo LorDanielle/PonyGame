@@ -32,7 +32,7 @@ func get_input():
 			jumping = true
 			velocity.y += JUMP_FORCE
 			$AnimatedFluttershy.play("Jump")
-			if velocity.y <= -400:
+			if velocity.y <= -600:
 				Proverka = true
 		elif not is_on_floor(): #Для предотвращения возможности прыжка после падения с платформы 
 			#(так как предыдущая функция позволяет совершить прыжок после падения с плафтормы, 
