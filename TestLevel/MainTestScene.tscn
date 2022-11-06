@@ -12,6 +12,14 @@ position = Vector2( 16, 372 )
 position = Vector2( 220, 239 )
 rotation = 1.58809
 
+[node name="Platform11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 430, 428 )
+rotation = 1.56635
+
+[node name="Platform12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 353, 712 )
+rotation = 4.70794
+
 [node name="Platform2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 377, 308 )
 

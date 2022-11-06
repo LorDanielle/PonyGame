@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 #Константы для физики
-const WALK_SPEED = 100
+const WALK_SPEED = 250
 const GRAVITY = 1200
 const JUMP_FORCE = -100
 const FLOOR = Vector2(0,-1)
@@ -34,7 +34,9 @@ func get_input():
 			$AnimatedFluttershy.play("Jump")
 			if velocity.y <= -400:
 				Proverka = true
-		elif not Input.is_action_pressed("ui_up") and not is_on_floor(): #Для предотвращения возможности прыжка после падения с платформы (так как предыдущая функция позволяет совершить прыжок после падения с плафтормы, если ранее не была нажата клавиша прыжка)
+		elif not is_on_floor(): #Для предотвращения возможности прыжка после падения с платформы 
+			#(так как предыдущая функция позволяет совершить прыжок после падения с плафтормы, 
+			#если ранее не была нажата клавиша прыжка)
 			Proverka = true
 		
 #Функция обрабатывающая движение
@@ -56,6 +58,7 @@ func _physics_process(delta):
 	elif not jumping and is_on_floor() and Proverka == true:
 		Proverka = false
 		
-	velocity = move_and_slide(velocity, FLOOR) #можно и без записи в velocity, но тогда персонаж будет резко слетать с платформ, а не плавно
+	velocity = move_and_slide(velocity, FLOOR) #можно и без записи в velocity, 
+	#но тогда персонаж будет резко слетать с платформ, а не плавно
 	
-	velocity.x = lerp(velocity.x, 0, 0.3)
+	velocity.x = lerp(velocity.x, 0, 1)
