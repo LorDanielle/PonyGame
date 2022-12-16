@@ -24,7 +24,8 @@ var wall_jump = true
 var first_slide = true
 var slide_count = 0
 onready var playerImage = get_node("AnimatedFluttershy")
-var GRAVITY = 1000
+var GRAVITY = 700###Гравитаааация большая
+
 var WALL_SLIDE_GRAVITY = 1000
 var MAX_SPEED = 250
 var can_slide = false
@@ -46,6 +47,7 @@ var is_moving = false
 var is_dashing = false
 var is_walljumping = false
 
+var is_dead=false
 #Функция обновления состояния
 func update_state():
 	if is_on_floor():
@@ -56,24 +58,32 @@ func update_state():
 		current_state = States.ON_WALL
 	else:
 		current_state = States.IN_AIR
-
+var pozition_dead=Vector2()
 #Функция перемещения персонажа
 func move(delta):
-	var direction = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-	if direction != 0:
-		is_moving = true
-		if $Timer2.is_stopped():
-			x_speed += direction * ACCELERATION * delta
-			x_speed = clamp(x_speed, -MAX_SPEED, MAX_SPEED)
-	if direction == 0:
-		is_moving = false
-		if current_state == States.ON_FLOOR:
-			if is_sliding:
-				x_speed = lerp(x_speed, 0, 0.01)
+	if is_dead==true:
+		self.position=pozition_dead
+		if Input.is_action_pressed("ui_accept"):
+			is_dead=false
+			#set_physics_process(true)
+			$DeadScrin.visible=false
+			self.position=Vect_chek
+	else:
+		var direction = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+		if direction != 0:
+			is_moving = true
+			if $Timer2.is_stopped():
+				x_speed += direction * ACCELERATION * delta
+				x_speed = clamp(x_speed, -MAX_SPEED, MAX_SPEED)
+		if direction == 0:
+			is_moving = false
+			if current_state == States.ON_FLOOR:
+				if is_sliding:
+					x_speed = lerp(x_speed, 0, 0.01)
+				else:
+					x_speed = lerp(x_speed, 0, 1)
 			else:
-				x_speed = lerp(x_speed, 0, 1)
-		else:
-			x_speed = lerp(x_speed, 0, AIR_RESISTANCE)
+				x_speed = lerp(x_speed, 0, AIR_RESISTANCE)
 
 #Функция определяющая близость к стене
 func nextToWall():
@@ -226,10 +236,28 @@ func anim():
 		$AnimatedFluttershy.play("Jump")
 	elif current_state != States.IN_AIR:
 		$AnimatedFluttershy.play("Idle")
+func dead():
+	#set_physics_process(false)
+	is_dead=true
+	pozition_dead=self.position
+	$DeadScrin.visible=true
+	
+	#velocity=Vector2(0,0)
+	#velocity=velocity.move_toward((0,0),1000)
+	#velocity=Vector2(0,0)
+	#print($FluttershyAnimated.)
+	#$FluttershyAnimated.position.y=746
 
+	#velocity = move_and_slide(velocity)
+var Vect_chek=Vector2(0,0)
+func chekpoint():
+	Vect_chek=self.position
+	print("chekpoint")
 #Функция обрабатывающая движение
 func _physics_process(delta):
+
 	#Сопоставление допустимых функций для определенных состояний
+	
 	match(current_state):
 		States.ON_FLOOR:
 			is_wallsliding = false
@@ -291,3 +319,5 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity, FLOOR) #можно и без записи в velocity, 
 	#но тогда персонаж будет резко слетать с платформ, а не плавно
+
+

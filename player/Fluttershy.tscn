@@ -149,4 +149,23 @@ one_shot = true
 wait_time = 0.5
 one_shot = true
 
+[node name="DeadScrin" type="Panel" parent="."]
+visible = false
+margin_left = -409.0
+margin_top = -273.0
+margin_right = 470.0
+margin_bottom = 191.0
+
+[node name="Label" type="Label" parent="DeadScrin"]
+margin_left = 269.0
+margin_top = 161.0
+margin_right = 438.0
+margin_bottom = 258.0
+rect_scale = Vector2( 1.726, 2.314 )
+text = "YOU ARE DEAD
+Retry?"
+align = 1
+valign = 1
+percent_visible = -0.1
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
