@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/upali-dengi-na-igrovoy-schet.mp3-87918fe3d0e8a346374ae8fb351c0b67.mp3str"
+
+[deps]
+
+source_file="res://upali-dengi-na-igrovoy-schet.mp3"
+dest_files=[ "res://.import/upali-dengi-na-igrovoy-schet.mp3-87918fe3d0e8a346374ae8fb351c0b67.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

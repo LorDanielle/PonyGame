@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/4.png" type="Texture" id=1]
 [ext_resource path="res://player/FluttershyTestSprite.gd" type="Script" id=2]
@@ -32,6 +32,8 @@
 [ext_resource path="res://player/PlayerSprites/FluttershySprites/Slide/slide1v2.png" type="Texture" id=30]
 [ext_resource path="res://player/PlayerSprites/FluttershySprites/Slide/slide2v2.png" type="Texture" id=31]
 [ext_resource path="res://player/PlayerSprites/FluttershySprites/Dash/dash2.png" type="Texture" id=32]
+[ext_resource path="res://upali-dengi-na-igrovoy-schet.mp3" type="AudioStream" id=33]
+[ext_resource path="res://Points.tscn" type="PackedScene" id=34]
 
 [sub_resource type="SpriteFrames" id=18]
 animations = [ {
@@ -92,6 +94,26 @@ drag_margin_left = 0.15
 drag_margin_right = 0.15
 editor_draw_drag_margin = true
 
+[node name="Points" parent="AnimatedFluttershy/Camera2D" instance=ExtResource( 34 )]
+
+[node name="DeadScrin" type="Panel" parent="."]
+visible = false
+margin_left = -662.0
+margin_top = -394.0
+margin_right = 756.0
+margin_bottom = 412.0
+
+[node name="Label" type="Label" parent="DeadScrin"]
+margin_left = -28.0
+margin_top = -26.0
+margin_right = 780.0
+margin_bottom = 342.0
+rect_scale = Vector2( 1.726, 2.314 )
+text = "YOU ARE DEAD
+Retry?"
+align = 1
+valign = 1
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 19 )
 
@@ -149,23 +171,7 @@ one_shot = true
 wait_time = 0.5
 one_shot = true
 
-[node name="DeadScrin" type="Panel" parent="."]
-visible = false
-margin_left = -409.0
-margin_top = -273.0
-margin_right = 470.0
-margin_bottom = 191.0
-
-[node name="Label" type="Label" parent="DeadScrin"]
-margin_left = 269.0
-margin_top = 161.0
-margin_right = 438.0
-margin_bottom = 258.0
-rect_scale = Vector2( 1.726, 2.314 )
-text = "YOU ARE DEAD
-Retry?"
-align = 1
-valign = 1
-percent_visible = -0.1
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 33 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

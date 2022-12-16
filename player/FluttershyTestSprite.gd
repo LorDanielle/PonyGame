@@ -24,7 +24,7 @@ var wall_jump = true
 var first_slide = true
 var slide_count = 0
 onready var playerImage = get_node("AnimatedFluttershy")
-var GRAVITY = 700###Гравитаааация большая
+var GRAVITY = 1000###Гравитаааация большая
 
 var WALL_SLIDE_GRAVITY = 1000
 var MAX_SPEED = 250
@@ -238,8 +238,10 @@ func anim():
 		$AnimatedFluttershy.play("Idle")
 func dead():
 	#set_physics_process(false)
+	
 	is_dead=true
 	pozition_dead=self.position
+	print($DeadScrin)
 	$DeadScrin.visible=true
 	
 	#velocity=Vector2(0,0)
@@ -321,3 +323,11 @@ func _physics_process(delta):
 	#но тогда персонаж будет резко слетать с платформ, а не плавно
 
 
+
+func _on__monetka():
+	#$звук_монетки.play()
+	pass
+
+
+func _on_coin_monetka():
+	$AudioStreamPlayer.play()

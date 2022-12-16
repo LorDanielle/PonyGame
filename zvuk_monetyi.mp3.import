@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zvuk_monetyi.mp3-edc894d271f8103e2d3ccf7fd0c2a538.mp3str"
+
+[deps]
+
+source_file="res://zvuk_monetyi.mp3"
+dest_files=[ "res://.import/zvuk_monetyi.mp3-edc894d271f8103e2d3ccf7fd0c2a538.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
