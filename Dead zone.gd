@@ -16,7 +16,6 @@ func _physics_process(delta):
 #func _process(delta):
 #	pass
 
-
 func _on_Dead_zone_area_entered(area):
 	print('go')
 	pass # Replace with function body.
