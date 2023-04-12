@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Area2D.gd" type="Script" id=1]
-[ext_resource path="res://монетка.png" type="Texture" id=2]
+[ext_resource path="res://монетка.png" type="Texture2D" id=2]
 [ext_resource path="res://upali-dengi-na-igrovoy-schet.mp3" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
@@ -17,7 +17,7 @@ one_shot = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
-[node name="coin" type="Sprite" parent="CollisionShape2D"]
+[node name="coin" type="Sprite2D" parent="CollisionShape2D"]
 position = Vector2( -7.15256e-07, -0.0625012 )
 scale = Vector2( 0.0791709, 0.0751912 )
 texture = ExtResource( 2 )

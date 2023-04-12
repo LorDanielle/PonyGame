@@ -1,4 +1,104 @@
-extends KinematicBody2D
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+
+
+
+
+
+
+#П#П#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+
+#П
+#П
+#П#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+
+
+
+
+
+
+#П#П#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+
+#П
+#П
+#П#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+
+
+
+
+
+
+#П#П#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+#П
+
+#П
+#П
+#П
+extends CharacterBody2D
 
 #перечисление состояний положения персонажа
 enum States {
@@ -23,7 +123,7 @@ var second_jump = true
 var wall_jump = true
 var first_slide = true
 var slide_count = 0
-onready var playerImage = get_node("AnimatedFluttershy")
+@onready var playerImage = get_node("AnimatedFluttershy")
 var GRAVITY = 1000###Гравитаааация большая
 
 var WALL_SLIDE_GRAVITY = 1000
@@ -319,7 +419,10 @@ func _physics_process(delta):
 	velocity.x = x_speed
 	velocity.y = y_speed
 	
-	velocity = move_and_slide(velocity, FLOOR) #можно и без записи в velocity, 
+	set_velocity(velocity)
+	set_up_direction(FLOOR)
+	move_and_slide()
+	velocity = velocity #можно и без записи в velocity, 
 	#но тогда персонаж будет резко слетать с платформ, а не плавно
 
 

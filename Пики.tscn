@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://ObjectSprites/PNG Grass/пикиИгра.png" type="Texture" id=1]
+[ext_resource path="res://ObjectSprites/PNG Grass/пикиИгра.png" type="Texture2D" id=1]
 [ext_resource path="res://Dead zone.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 23, 25 )
+size = Vector2( 23, 25 )
 
 [node name="Пики" type="Node2D"]
 __meta__ = {
@@ -18,7 +18,7 @@ script = ExtResource( 2 )
 position = Vector2( 23, 25 )
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="Dead zone/CollisionShape2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Dead zone/CollisionShape2D"]
 position = Vector2( -2.5, -0.500002 )
 scale = Vector2( 0.0713287, 0.0351759 )
 texture = ExtResource( 1 )

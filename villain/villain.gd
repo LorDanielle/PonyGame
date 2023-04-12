@@ -1,17 +1,18 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 var speed = 20
 var stands = true
 var destination = Vector2()
 var velocity = Vector2()
-onready var villain = get_node("villain")
+@onready var villain = get_node("villain")
 func _ready():
 	var speed = 20
 	
 
 func _process(delta):
 	if velocity:
-		move_and_slide(velocity)
+		set_velocity(velocity)
+		move_and_slide()
 		#position.x = clamp(position.x, 0, 1000)
 		#position.y = clamp(position.y, 0, 1000)
 		
@@ -31,12 +32,12 @@ func wander():
 	var pos = position
 	if stands:
 		#randomize()
-		var x = int(rand_range(pos.x - 50, pos.x + 50))
+		var x = int(randf_range(pos.x - 50, pos.x + 50))
 		if pos.x + 50 - pos.x - 50 >= 0:
 			villain.flip_h = false
 		else:
 			villain.flip_h = true
-		var y = int(rand_range(pos.y, pos.y))
+		var y = int(randf_range(pos.y, pos.y))
 		
 		
 		x = clamp(x, 0, 10000)

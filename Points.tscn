@@ -3,8 +3,8 @@
 [node name="Points" type="CanvasLayer"]
 
 [node name="Label" type="Label" parent="."]
-margin_left = -393.0
-margin_top = -215.0
-margin_right = -345.0
-margin_bottom = -201.0
+offset_left = -393.0
+offset_top = -215.0
+offset_right = -345.0
+offset_bottom = -201.0
 text = "Points: "
