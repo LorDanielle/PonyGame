@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dcq82h6c3qclo"]
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="задний фон" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.564706, 0.533333, 0.929412, 1)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 151.0
+offset_right = 1103.0
+offset_bottom = 476.0
+scale = Vector2(0.93923, 1.02134)
+pivot_offset = Vector2(670.406, -275.032)
+
+[node name="new game" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 276.034
+offset_top = 68.667
+offset_right = 805.034
+offset_bottom = 111.667
+text = "new game"
+
+[node name="continue" type="Button" parent="Panel"]
+offset_left = 276.034
+offset_top = 129.372
+offset_right = 805.034
+offset_bottom = 172.372
+text = "continue"
+
+[node name="quit" type="Button" parent="Panel"]
+offset_left = 277.099
+offset_top = 198.889
+offset_right = 806.099
+offset_bottom = 241.889
+text = "quit"
