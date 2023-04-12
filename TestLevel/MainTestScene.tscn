@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [gd_scene load_steps=19 format=3 uid="uid://b6e8h5ciqn7y1"]
 
 [ext_resource type="PackedScene" path="res://player/Fluttershy.tscn" id="1"]
@@ -12,20 +11,6 @@
 [ext_resource type="PackedScene" path="res://Chekpoint.tscn" id="9"]
 [ext_resource type="PackedScene" path="res://coin.tscn" id="10"]
 [ext_resource type="PackedScene" path="res://villain/villain.tscn" id="11"]
-=======
-[gd_scene load_steps=18 format=2]
-
-[ext_resource path="res://player/Fluttershy.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Пики.tscn" type="PackedScene" id=2]
-[ext_resource path="res://ObjectSprites/PNG Grass/slice03_03.png" type="Texture" id=3]
-[ext_resource path="res://ObjectSprites/PNG Grass/торт.png" type="Texture" id=4]
-[ext_resource path="res://ObjectSprites/PNG Grass/slice33_33.png" type="Texture" id=5]
-[ext_resource path="res://ObjectSprites/PNG Grass/торт без верха.png" type="Texture" id=6]
-[ext_resource path="res://ObjectSprites/PNG Grass/камень.png" type="Texture" id=7]
-[ext_resource path="res://ObjectSprites/PNG Grass/камень темный.png" type="Texture" id=8]
-[ext_resource path="res://Chekpoint.tscn" type="PackedScene" id=9]
-[ext_resource path="res://coin.tscn" type="PackedScene" id=10]
->>>>>>> parent of 8bb024f (Вражина и зона)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3043j"]
 texture = ExtResource("3")
@@ -356,15 +341,9 @@ scale = Vector2(0.4, 0.4)
 [node name="Пики" parent="Пики/Пики3" instance=ExtResource("2")]
 position = Vector2(45, 0)
 
-<<<<<<< HEAD
 [node name="Пики4" parent="Пики" instance=ExtResource("2")]
 position = Vector2(4649, 62.0001)
 scale = Vector2(0.4, 0.4)
-=======
-[node name="Пики4" parent="Пики" instance=ExtResource( 2 )]
-position = Vector2( 4649, 53.9999 )
-scale = Vector2( 0.4, 0.4 )
->>>>>>> parent of 8bb024f (Вражина и зона)
 
 [node name="Пики5" parent="Пики" instance=ExtResource("2")]
 position = Vector2(4714, 62)
@@ -448,7 +427,6 @@ position = Vector2(217.295, -284)
 [node name="Пики" parent="Пики/Пики/Пики/Пики/Пики/Пики2" instance=ExtResource("2")]
 position = Vector2(49.2239, 3)
 
-<<<<<<< HEAD
 [node name="Out_of_bounds" parent="Пики/Пики/Пики/Пики/Пики/Пики2" instance=ExtResource("2")]
 visible = false
 position = Vector2(-1467.41, 493)
@@ -456,10 +434,6 @@ scale = Vector2(70, 1)
 
 [node name="Chekpoint" parent="." instance=ExtResource("9")]
 position = Vector2(548, 760)
-=======
-[node name="Chekpoint" parent="." instance=ExtResource( 9 )]
-position = Vector2( 548, 760 )
->>>>>>> parent of 8bb024f (Вражина и зона)
 
 [node name="Chekpoint2" parent="Chekpoint" instance=ExtResource("9")]
 position = Vector2(-592, 82)
@@ -479,13 +453,8 @@ position = Vector2(2876, -167)
 [node name="Chekpoint4" parent="Chekpoint/Chekpoint2/Chekpoint" instance=ExtResource("9")]
 position = Vector2(3733, -170)
 
-<<<<<<< HEAD
 [node name="Fluttershy" parent="." instance=ExtResource("1")]
 position = Vector2(0, 817)
-=======
-[node name="Fluttershy" parent="." instance=ExtResource( 1 )]
-position = Vector2( 16, 803 )
->>>>>>> parent of 8bb024f (Вражина и зона)
 
 [node name="coin20" parent="." instance=ExtResource("10")]
 position = Vector2(6218, 760)
@@ -547,7 +516,6 @@ position = Vector2(75, -89)
 [node name="coin19" parent="coin20" instance=ExtResource("10")]
 position = Vector2(77, -8)
 
-<<<<<<< HEAD
 [node name="villain" parent="." instance=ExtResource("11")]
 position = Vector2(750, 814)
 
@@ -560,8 +528,6 @@ position = Vector2(1592, 2)
 [node name="villain4" parent="villain" instance=ExtResource("11")]
 position = Vector2(4270, 3)
 
-=======
->>>>>>> parent of 8bb024f (Вражина и зона)
 [connection signal="monetka" from="coin20" to="Fluttershy" method="_on__monetka"]
 [connection signal="monetka" from="coin20" to="Fluttershy" method="_on_coin_monetka"]
 [connection signal="monetka" from="coin20/coin" to="Fluttershy" method="_on__monetka"]
