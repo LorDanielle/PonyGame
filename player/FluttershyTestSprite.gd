@@ -16,7 +16,7 @@ const extraSlide = 1
 #Переменные для передвижения и тд
 var ACCELERATION = 500
 var current_state
-var velocity = Vector2()
+#var velocity = Vector2()
 var second_jump = true
 var wall_jump = true
 var first_slide = true
