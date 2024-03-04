@@ -3,7 +3,7 @@ extends CharacterBody2D
 var speed = 20
 var stands = true
 var destination = Vector2()
-var velocity = Vector2()
+#var velocity = Vector2()
 @onready var villain = get_node("villain")
 func _ready():
 	var speed = 20

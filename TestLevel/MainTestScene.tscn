@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://b6e8h5ciqn7y1"]
 
-[ext_resource type="PackedScene" path="res://player/Fluttershy.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://djooi5khssdtf" path="res://player/Fluttershy.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://Пики.tscn" id="2"]
 [ext_resource type="Texture2D" uid="uid://pjon1cy4itgk" path="res://ObjectSprites/PNG Grass/slice03_03.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://dsy48nk6csbxc" path="res://ObjectSprites/PNG Grass/торт.png" id="4"]
@@ -454,7 +454,7 @@ position = Vector2(2876, -167)
 position = Vector2(3733, -170)
 
 [node name="Fluttershy" parent="." instance=ExtResource("1")]
-position = Vector2(0, 817)
+position = Vector2(64, 639)
 
 [node name="coin20" parent="." instance=ExtResource("10")]
 position = Vector2(6218, 760)

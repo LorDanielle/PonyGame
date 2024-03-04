@@ -1,100 +1,207 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=38 format=3 uid="uid://djooi5khssdtf"]
 
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/4.png" type="Texture2D" id=1]
-[ext_resource path="res://player/FluttershyTestSprite.gd" type="Script" id=2]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/9.png" type="Texture2D" id=3]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/6.png" type="Texture2D" id=4]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/5.png" type="Texture2D" id=5]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/7.png" type="Texture2D" id=6]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/8.png" type="Texture2D" id=7]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/3.png" type="Texture2D" id=8]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/1.png" type="Texture2D" id=9]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/2.png" type="Texture2D" id=10]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Idle/Idle2.png" type="Texture2D" id=11]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/11.png" type="Texture2D" id=12]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/10.png" type="Texture2D" id=13]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/14.png" type="Texture2D" id=14]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/12.png" type="Texture2D" id=15]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/13.png" type="Texture2D" id=16]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/16.png" type="Texture2D" id=17]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Walk/15.png" type="Texture2D" id=18]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Idle/Idle.png" type="Texture2D" id=19]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Idle/Idle1.png" type="Texture2D" id=20]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Idle/Idle11.png" type="Texture2D" id=21]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Jump/1.png" type="Texture2D" id=22]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Jump/3.png" type="Texture2D" id=23]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Jump/22.png" type="Texture2D" id=24]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Jump/2.png" type="Texture2D" id=25]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Dash/dash1.png" type="Texture2D" id=26]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/DoubleJump/dj2.png" type="Texture2D" id=27]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/DoubleJump/dj3.png" type="Texture2D" id=28]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/WallSlide/ws1.png" type="Texture2D" id=29]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Slide/slide1v2.png" type="Texture2D" id=30]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Slide/slide2v2.png" type="Texture2D" id=31]
-[ext_resource path="res://player/PlayerSprites/FluttershySprites/Dash/dash2.png" type="Texture2D" id=32]
-[ext_resource path="res://upali-dengi-na-igrovoy-schet.mp3" type="AudioStream" id=33]
-[ext_resource path="res://Points.tscn" type="PackedScene" id=34]
+[ext_resource type="Texture2D" uid="uid://cb7db83kc2yn5" path="res://player/PlayerSprites/FluttershySprites/Walk/4.png" id="1"]
+[ext_resource type="Script" path="res://player/FluttershyTestSprite.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://bnvfgwyg8vycr" path="res://player/PlayerSprites/FluttershySprites/Walk/9.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://uomt3edyyh2k" path="res://player/PlayerSprites/FluttershySprites/Walk/6.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://nb8562kpr85u" path="res://player/PlayerSprites/FluttershySprites/Walk/5.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cxjq2dr46jnm8" path="res://player/PlayerSprites/FluttershySprites/Walk/7.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cpit7ciisdt8e" path="res://player/PlayerSprites/FluttershySprites/Walk/8.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://b78yl8ndn35l4" path="res://player/PlayerSprites/FluttershySprites/Walk/3.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://donjoqh1pp1xf" path="res://player/PlayerSprites/FluttershySprites/Walk/1.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://blg74evuaqowj" path="res://player/PlayerSprites/FluttershySprites/Walk/2.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dr1hri64trj5l" path="res://player/PlayerSprites/FluttershySprites/Idle/Idle2.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://1pbbhxmlx2lx" path="res://player/PlayerSprites/FluttershySprites/Walk/11.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://iuve5dgehiua" path="res://player/PlayerSprites/FluttershySprites/Walk/10.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://205itnclhqr8" path="res://player/PlayerSprites/FluttershySprites/Walk/14.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://bfq3by6bkjs3r" path="res://player/PlayerSprites/FluttershySprites/Walk/12.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://ckt1af2yd4yrg" path="res://player/PlayerSprites/FluttershySprites/Walk/13.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://cyscjuip0t2l5" path="res://player/PlayerSprites/FluttershySprites/Walk/16.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dpf7ru4dyxs8x" path="res://player/PlayerSprites/FluttershySprites/Walk/15.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://yfjqlpvtwu8p" path="res://player/PlayerSprites/FluttershySprites/Idle/Idle.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cgmiin1r4w8pu" path="res://player/PlayerSprites/FluttershySprites/Idle/Idle1.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://cjvkw0qjnqry" path="res://player/PlayerSprites/FluttershySprites/Idle/Idle11.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://cbl8tpxvcie6a" path="res://player/PlayerSprites/FluttershySprites/Jump/1.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://cyix04ip67tgb" path="res://player/PlayerSprites/FluttershySprites/Jump/3.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://ddjvlf1d2p1co" path="res://player/PlayerSprites/FluttershySprites/Jump/22.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://qg7bqoglqmfd" path="res://player/PlayerSprites/FluttershySprites/Jump/2.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://qxpcg6nudex2" path="res://player/PlayerSprites/FluttershySprites/Dash/dash1.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://brlxgw32q23vi" path="res://player/PlayerSprites/FluttershySprites/DoubleJump/dj2.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://cwjcr6an0im8w" path="res://player/PlayerSprites/FluttershySprites/DoubleJump/dj3.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://d0pdy77fu1mk5" path="res://player/PlayerSprites/FluttershySprites/WallSlide/ws1.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://evqg7cvnwfx4" path="res://player/PlayerSprites/FluttershySprites/Slide/slide1v2.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://u3y1l2myrhtu" path="res://player/PlayerSprites/FluttershySprites/Slide/slide2v2.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://wdk74tjgel46" path="res://player/PlayerSprites/FluttershySprites/Dash/dash2.png" id="32"]
+[ext_resource type="AudioStream" uid="uid://du55lvmy2blct" path="res://upali-dengi-na-igrovoy-schet.mp3" id="33"]
+[ext_resource type="PackedScene" path="res://Points.tscn" id="34"]
 
-[sub_resource type="SpriteFrames" id=18]
-animations = [ {
-"frames": [ ExtResource( 26 ), ExtResource( 32 ), ExtResource( 26 ) ],
+[sub_resource type="SpriteFrames" id="18"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26")
+}],
 "loop": false,
-"name": "Dash",
+"name": &"Dash",
 "speed": 8.0
 }, {
-"frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 27 ), ExtResource( 25 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}],
 "loop": false,
-"name": "DoubleJump",
+"name": &"DoubleJump",
 "speed": 8.35
 }, {
-"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 11 ), ExtResource( 21 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21")
+}],
 "loop": true,
-"name": "Idle",
+"name": &"Idle",
 "speed": 4.0
 }, {
-"frames": [ ExtResource( 22 ), ExtResource( 25 ), ExtResource( 23 ), ExtResource( 24 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24")
+}],
 "loop": false,
-"name": "Jump",
+"name": &"Jump",
 "speed": 8.0
 }, {
-"frames": [ ExtResource( 30 ), ExtResource( 31 ), ExtResource( 31 ), ExtResource( 30 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30")
+}],
 "loop": false,
-"name": "Slide",
+"name": &"Slide",
 "speed": 2.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 3 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 17 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17")
+}],
 "loop": true,
-"name": "Walk",
+"name": &"Walk",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 29 ) ],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29")
+}],
 "loop": false,
-"name": "WallSlide",
+"name": &"WallSlide",
 "speed": 1.0
-} ]
+}]
 
-[sub_resource type="RectangleShape2D" id=19]
-size = Vector2( 20, 23.5 )
+[sub_resource type="RectangleShape2D" id="19"]
+size = Vector2(20, 23.5)
 
-[sub_resource type="RectangleShape2D" id=20]
-size = Vector2( 19.5, 12.5 )
+[sub_resource type="RectangleShape2D" id="20"]
+size = Vector2(19.5, 12.5)
 
 [node name="Fluttershy" type="CharacterBody2D"]
-script = ExtResource( 2 )
+script = ExtResource("2")
 
 [node name="AnimatedFluttershy" type="AnimatedSprite2D" parent="."]
-frames = SubResource( 18 )
-animation = "Dash"
+sprite_frames = SubResource("18")
+animation = &"Dash"
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedFluttershy"]
-current = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 drag_left_margin = 0.15
 drag_right_margin = 0.15
 editor_draw_drag_margin = true
 
-[node name="Points" parent="AnimatedFluttershy/Camera2D" instance=ExtResource( 34 )]
+[node name="Points" parent="AnimatedFluttershy/Camera2D" instance=ExtResource("34")]
 
 [node name="DeadScrin" type="Panel" parent="."]
 visible = false
@@ -104,18 +211,17 @@ offset_right = 756.0
 offset_bottom = 412.0
 
 [node name="Label" type="Label" parent="DeadScrin"]
+layout_mode = 0
 offset_left = -28.0
 offset_top = -26.0
 offset_right = 780.0
 offset_bottom = 342.0
-scale = Vector2( 1.726, 2.314 )
+scale = Vector2(1.726, 2.314)
 text = "YOU ARE DEAD
 Retry?"
-align = 1
-valign = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 19 )
+shape = SubResource("19")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
@@ -126,43 +232,39 @@ wait_time = 0.25
 one_shot = true
 
 [node name="RightWall" type="RayCast2D" parent="."]
-position = Vector2( 0, -20 )
+position = Vector2(0, -20)
 rotation = -1.5708
-enabled = true
-target_position = Vector2( 0, 25 )
+target_position = Vector2(0, 25)
 
 [node name="RightWall2" type="RayCast2D" parent="."]
-position = Vector2( 0, 20 )
+position = Vector2(0, 20)
 rotation = -1.5708
-enabled = true
-target_position = Vector2( 0, 25 )
+target_position = Vector2(0, 25)
 
 [node name="LeftWall" type="RayCast2D" parent="."]
-position = Vector2( 0, -20 )
+position = Vector2(0, -20)
 rotation = 1.5708
-enabled = true
-target_position = Vector2( 0, 25 )
+target_position = Vector2(0, 25)
 
 [node name="LeftWall2" type="RayCast2D" parent="."]
-position = Vector2( 0, 20 )
+position = Vector2(0, 20)
 rotation = 1.5708
-enabled = true
-target_position = Vector2( 0, 25 )
+target_position = Vector2(0, 25)
 
 [node name="SlideShape" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 11 )
-shape = SubResource( 20 )
+position = Vector2(0, 11)
+shape = SubResource("20")
 disabled = true
 
 [node name="roof" type="RayCast2D" parent="."]
-position = Vector2( -20, 1 )
+position = Vector2(-20, 1)
 rotation = 3.14159
-target_position = Vector2( -1.71661e-05, 7 )
+target_position = Vector2(-1.71661e-05, 7)
 
 [node name="roof2" type="RayCast2D" parent="."]
-position = Vector2( 20, 1 )
+position = Vector2(20, 1)
 rotation = 3.14159
-target_position = Vector2( -1.71661e-05, 7 )
+target_position = Vector2(-1.71661e-05, 7)
 
 [node name="Timer6" type="Timer" parent="."]
 one_shot = true
@@ -172,6 +274,6 @@ wait_time = 0.5
 one_shot = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 33 )
+stream = ExtResource("33")
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

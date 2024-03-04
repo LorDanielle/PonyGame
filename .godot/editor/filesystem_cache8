@@ -1,21 +1,21 @@
 2a60927148abd1d33b818b535e306557
-::res://::1681309246
+::res://::1681745985
 Area2D.gd::GDScript::-1::1681309237::0::1::::<>Area2D<>::
 Chekpoint.tscn::PackedScene::-1::1681309237::0::1::::<><>::res://ObjectSprites/checkpoint-icon-png-7.png<>res://Wtf/Area2D.gd
 coin.tscn::PackedScene::-1::1681309237::0::1::::<><>::res://Area2D.gd<>res://монетка.png<>res://upali-dengi-na-igrovoy-schet.mp3
-Dead zone.gd::GDScript::-1::1681309237::0::1::::<>Area2D<>::
+Dead zone.gd::GDScript::-1::1681313348::0::1::::<>Area2D<>::
 Points.tscn::PackedScene::-1::1681309237::0::1::::<><>::
 upali-dengi-na-igrovoy-schet.mp3::AudioStreamMP3::8626812532632281275::1681309039::1681309247::1::::<><>::
 zvuk_monetyi.mp3::AudioStreamMP3::1581569913325210150::1681309039::1681309247::1::::<><>::
 монетка.png::CompressedTexture2D::2290703964635909236::1681309039::1681309248::1::::<><>::
 Пики.tscn::PackedScene::-1::1681309237::0::1::::<><>::res://ObjectSprites/PNG Grass/пикиИгра.png<>res://Dead zone.gd
 Уровень2.tscn::PackedScene::-1::1681309237::0::1::::<><>::res://player/Fluttershy.tscn<>res://ObjectSprites/dirt_platform.tscn
-::res://ObjectSprites/::1681309039
+::res://ObjectSprites/::1681309248
 checkpoint-icon-png-7.png::CompressedTexture2D::372664403994924712::1681309039::1681309247::1::::<><>::
 dirt_platform.tscn::PackedScene::-1::1681309237::0::1::::<><>::res://ObjectSprites/PNG Grass/dirt.png
 TestPlatform.tscn::PackedScene::-1::1681309237::0::1::::<><>::
 пикиИгра.png::CompressedTexture2D::910427280081416733::1681309039::1681309248::1::::<><>::
-::res://ObjectSprites/PNG Grass/::1681309039
+::res://ObjectSprites/PNG Grass/::1681309248
 dirt.png::CompressedTexture2D::3990041547143976475::1681309039::1681309248::1::::<><>::
 grassHalf.png::CompressedTexture2D::2183952484524974354::1681309039::1681309248::1::::<><>::
 grassHalfLeft.png::CompressedTexture2D::6547246276381038897::1681309039::1681309247::1::::<><>::
@@ -58,37 +58,37 @@ slice36_36.png::CompressedTexture2D::7098971560043821237::1681309039::1681309248
 пикиИгра.png::CompressedTexture2D::6323486757909539353::1681309039::1681309248::1::::<><>::
 торт без верха.png::CompressedTexture2D::8475385912788298461::1681309039::1681309248::1::::<><>::
 торт.png::CompressedTexture2D::8474026726313885988::1681309039::1681309248::1::::<><>::
-::res://ObjectSprites/PNG Grass/Spritesheet/::1681309039
+::res://ObjectSprites/PNG Grass/Spritesheet/::1681309248
 sheet.png::CompressedTexture2D::4706130038050522343::1681309039::1681309248::1::::<><>::
-::res://player/::1681309039
+::res://player/::1681314270
 Fluttershy.tscn::PackedScene::-1::1681309237::0::1::::<><>::res://player/PlayerSprites/FluttershySprites/Walk/4.png<>res://player/FluttershyTestSprite.gd<>res://player/PlayerSprites/FluttershySprites/Walk/9.png<>res://player/PlayerSprites/FluttershySprites/Walk/6.png<>res://player/PlayerSprites/FluttershySprites/Walk/5.png<>res://player/PlayerSprites/FluttershySprites/Walk/7.png<>res://player/PlayerSprites/FluttershySprites/Walk/8.png<>res://player/PlayerSprites/FluttershySprites/Walk/3.png<>res://player/PlayerSprites/FluttershySprites/Walk/1.png<>res://player/PlayerSprites/FluttershySprites/Walk/2.png<>res://player/PlayerSprites/FluttershySprites/Idle/Idle2.png<>res://player/PlayerSprites/FluttershySprites/Walk/11.png<>res://player/PlayerSprites/FluttershySprites/Walk/10.png<>res://player/PlayerSprites/FluttershySprites/Walk/14.png<>res://player/PlayerSprites/FluttershySprites/Walk/12.png<>res://player/PlayerSprites/FluttershySprites/Walk/13.png<>res://player/PlayerSprites/FluttershySprites/Walk/16.png<>res://player/PlayerSprites/FluttershySprites/Walk/15.png<>res://player/PlayerSprites/FluttershySprites/Idle/Idle.png<>res://player/PlayerSprites/FluttershySprites/Idle/Idle1.png<>res://player/PlayerSprites/FluttershySprites/Idle/Idle11.png<>res://player/PlayerSprites/FluttershySprites/Jump/1.png<>res://player/PlayerSprites/FluttershySprites/Jump/3.png<>res://player/PlayerSprites/FluttershySprites/Jump/22.png<>res://player/PlayerSprites/FluttershySprites/Jump/2.png<>res://player/PlayerSprites/FluttershySprites/Dash/dash1.png<>res://player/PlayerSprites/FluttershySprites/DoubleJump/dj2.png<>res://player/PlayerSprites/FluttershySprites/DoubleJump/dj3.png<>res://player/PlayerSprites/FluttershySprites/WallSlide/ws1.png<>res://player/PlayerSprites/FluttershySprites/Slide/slide1v2.png<>res://player/PlayerSprites/FluttershySprites/Slide/slide2v2.png<>res://player/PlayerSprites/FluttershySprites/Dash/dash2.png<>res://upali-dengi-na-igrovoy-schet.mp3<>res://Points.tscn
-FluttershyTestSprite.gd::GDScript::-1::1681309237::0::1::::<>CharacterBody2D<>::
+FluttershyTestSprite.gd::GDScript::-1::1681314270::0::1::::<>CharacterBody2D<>::
 l1048753060.jpg::CompressedTexture2D::8350052872656956008::1681309039::1681309247::1::::<><>::
 пикиИгра.png::CompressedTexture2D::4708070599784784530::1681309039::1681309248::1::::<><>::
-::res://player/PlayerSprites/::1681309039
+::res://player/PlayerSprites/::1681309249
 SpriteSheet.png::CompressedTexture2D::5477218331386094278::1681309039::1681309249::1::::<><>::
 ::res://player/PlayerSprites/FluttershySprites/::1681309039
-::res://player/PlayerSprites/FluttershySprites/Dash/::1681309039
+::res://player/PlayerSprites/FluttershySprites/Dash/::1681309247
 dash1.png::CompressedTexture2D::1171416876677748081::1681309039::1681309247::1::::<><>::
 dash2.png::CompressedTexture2D::1551013561577058949::1681309039::1681309247::1::::<><>::
-::res://player/PlayerSprites/FluttershySprites/DoubleJump/::1681309039
+::res://player/PlayerSprites/FluttershySprites/DoubleJump/::1681309247
 dj1.png::CompressedTexture2D::3202823211620687664::1681309039::1681309247::1::::<><>::
 dj2.png::CompressedTexture2D::3603747586448826106::1681309039::1681309247::1::::<><>::
 dj3.png::CompressedTexture2D::6335728748539621528::1681309039::1681309247::1::::<><>::
-::res://player/PlayerSprites/FluttershySprites/Idle/::1681309039
+::res://player/PlayerSprites/FluttershySprites/Idle/::1681309247
 Idle1.png::CompressedTexture2D::5219247708337010614::1681309039::1681309247::1::::<><>::
 Idle2.png::CompressedTexture2D::8406602061396591683::1681309039::1681309247::1::::<><>::
 Idle11.png::CompressedTexture2D::160251196723084882::1681309039::1681309247::1::::<><>::
 Idle.png::CompressedTexture2D::1695429763629793665::1681309039::1681309247::1::::<><>::
-::res://player/PlayerSprites/FluttershySprites/Jump/::1681309039
+::res://player/PlayerSprites/FluttershySprites/Jump/::1681309247
 1.png::CompressedTexture2D::4867776781502268782::1681309039::1681309247::1::::<><>::
 2.png::CompressedTexture2D::1137353356584127821::1681309039::1681309247::1::::<><>::
 3.png::CompressedTexture2D::6475331308672535785::1681309039::1681309247::1::::<><>::
 22.png::CompressedTexture2D::7389702985315660482::1681309039::1681309247::1::::<><>::
-::res://player/PlayerSprites/FluttershySprites/Slide/::1681309039
+::res://player/PlayerSprites/FluttershySprites/Slide/::1681309247
 slide1v2.png::CompressedTexture2D::325091178844278623::1681309039::1681309247::1::::<><>::
 slide2v2.png::CompressedTexture2D::1463083708386788734::1681309039::1681309247::1::::<><>::
-::res://player/PlayerSprites/FluttershySprites/Walk/::1681309039
+::res://player/PlayerSprites/FluttershySprites/Walk/::1681309247
 1.png::CompressedTexture2D::8169315079253320035::1681309039::1681309247::1::::<><>::
 2.png::CompressedTexture2D::3172879205471232365::1681309039::1681309247::1::::<><>::
 3.png::CompressedTexture2D::4702066751061285339::1681309039::1681309247::1::::<><>::
@@ -105,16 +105,16 @@ slide2v2.png::CompressedTexture2D::1463083708386788734::1681309039::1681309247::
 14.png::CompressedTexture2D::1948545036344576779::1681309039::1681309247::1::::<><>::
 15.png::CompressedTexture2D::8224390992120633113::1681309039::1681309247::1::::<><>::
 16.png::CompressedTexture2D::6494670983943888648::1681309039::1681309247::1::::<><>::
-::res://player/PlayerSprites/FluttershySprites/WallSlide/::1681309039
+::res://player/PlayerSprites/FluttershySprites/WallSlide/::1681309247
 ws1.png::CompressedTexture2D::8945175548808912210::1681309039::1681309247::1::::<><>::
-::res://TestLevel/::1681309039
-MainTestScene.tscn::PackedScene::-1::1681309237::0::1::::<><>::res://player/Fluttershy.tscn<>res://Пики.tscn<>res://ObjectSprites/PNG Grass/slice03_03.png<>res://ObjectSprites/PNG Grass/торт.png<>res://ObjectSprites/PNG Grass/slice33_33.png<>res://ObjectSprites/PNG Grass/торт без верха.png<>res://ObjectSprites/PNG Grass/камень.png<>res://ObjectSprites/PNG Grass/камень темный.png<>res://Chekpoint.tscn<>res://coin.tscn<>res://villain/villain.tscn
-::res://villain/::1681309039
-villain.gd::GDScript::-1::1681309237::0::1::::<>CharacterBody2D<>::
-villain.jpg::CompressedTexture2D::7155942715154772723::1681309039::1681309247::1::::<><>::
-villain.tscn::PackedScene::-1::1681309237::0::1::::<><>::res://villain/Слой 1.png<>res://villain/villain.gd
-Слой 1.png::CompressedTexture2D::1579757808140994070::1681309039::1681309247::1::::<><>::
-::res://Wtf/::1681309039
-Area2D.gd::GDScript::-1::1681309237::0::1::::<>Area2D<>::
-default_env.tres::Environment::-1::1681309237::0::1::::<><>::
+::res://TestLevel/::1681314272
+MainTestScene.tscn::PackedScene::4572550087982498354::1681314272::0::1::::<><>::res://player/Fluttershy.tscn<>res://Пики.tscn<>uid://pjon1cy4itgk<>uid://dsy48nk6csbxc<>uid://cvxovg2kp3y03<>uid://ds0smrcv1uxir<>uid://dr44f7bi4d02x<>uid://c272ws8n5qlng<>res://Chekpoint.tscn<>res://coin.tscn<>res://villain/villain.tscn
+::res://villain/::1681314267
+villain.gd::GDScript::-1::1681314267::0::1::::<>CharacterBody2D<>::
+villain.jpg::CompressedTexture2D::7155942715154772723::1681313348::1681309247::1::::<><>::
+villain.tscn::PackedScene::-1::1681313348::0::1::::<><>::res://villain/Слой 1.png<>res://villain/villain.gd
+Слой 1.png::CompressedTexture2D::1579757808140994070::1681313348::1681309247::1::::<><>::
+::res://Wtf/::1681314272
+Area2D.gd::GDScript::-1::1681314272::0::1::::<>Area2D<>::
+default_env.tres::Environment::2006441485684038528::1681314272::0::1::::<><>::
 icon.png::CompressedTexture2D::4043440700461342687::1681309039::1681309247::1::::<><>::

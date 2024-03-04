@@ -1,105 +1,4 @@
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-
-
-
-
-
-
-#П#П#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-
-#П
-#П
-#П#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-
-
-
-
-
-
-#П#П#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-
-#П
-#П
-#П#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-
-
-
-
-
-
-#П#П#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-#П
-
-#П
-#П
-#П
 extends CharacterBody2D
-
 #перечисление состояний положения персонажа
 enum States {
 	ON_FLOOR,
@@ -118,7 +17,7 @@ const extraSlide = 1
 #Переменные для передвижения и тд
 var ACCELERATION = 500
 var current_state
-var velocity = Vector2()
+var velocityy = Vector2()
 var second_jump = true
 var wall_jump = true
 var first_slide = true
@@ -135,8 +34,8 @@ var MAX_FALL_SPEED_WALL_SLIDE = 80
 var dash_count = 0
 var extra_dash = 1
 
-var x_speed = 0
-var y_speed = 0
+var x_speed = 0.01
+var y_speed = 0.01
 
 #Переменные определяющие выполняемое действие
 var is_sliding = false
@@ -165,7 +64,7 @@ func move(delta):
 		self.position=pozition_dead
 		if Input.is_action_pressed("ui_accept"):
 			is_dead=false
-			#set_physics_process(true)
+			set_physics_process(true)
 			$DeadScrin.visible=false
 			self.position=Vect_chek
 	else:
@@ -191,12 +90,12 @@ func nextToWall():
 
 #Функция определяющая близость к правой стене
 func nextToRightWall():
-	#playerImage.flip_h = true
+	playerImage.flip_h = true
 	return ($RightWall.is_colliding() or $RightWall2.is_colliding())
 
 #Функция определяющая близость к левой стене
 func nextToLeftWall():
-	#playerImage.flip_h = false
+	playerImage.flip_h = false
 	return ($LeftWall.is_colliding() or $LeftWall2.is_colliding())
 
 #Функция скольжения по стене
@@ -233,7 +132,7 @@ func jump():
 		if Input.is_action_just_pressed("ui_up") and second_jump == true:
 			is_doubleJumping = true
 			second_jump = false
-			#$AnimatedFluttershy.play("DoubleJump")
+			$AnimatedFluttershy.play("DoubleJump")
 			y_speed = JUMP_FORCE
 		if Input.is_action_just_released("ui_up"):
 			is_doubleJumping = false
@@ -281,7 +180,7 @@ func sliding_logic():
 		$roof2.enabled = false
 	if is_sliding and current_state == States.ON_FLOOR:
 		MAX_SPEED = 150
-		#$AnimatedFluttershy.play("Slide")
+		$AnimatedFluttershy.play("Slide")
 	else:
 		MAX_SPEED = 250
 		is_sliding = false
@@ -337,20 +236,13 @@ func anim():
 	elif current_state != States.IN_AIR:
 		$AnimatedFluttershy.play("Idle")
 func dead():
-	#set_physics_process(false)
+	set_physics_process(false)
 	
 	is_dead=true
 	pozition_dead=self.position
 	print($DeadScrin)
 	$DeadScrin.visible=true
 	
-	#velocity=Vector2(0,0)
-	#velocity=velocity.move_toward((0,0),1000)
-	#velocity=Vector2(0,0)
-	#print($FluttershyAnimated.)
-	#$FluttershyAnimated.position.y=746
-
-	#velocity = move_and_slide(velocity)
 var Vect_chek=Vector2(0,0)
 func chekpoint():
 	Vect_chek=self.position
@@ -389,18 +281,7 @@ func _physics_process(delta):
 			playerImage.flip_h = false
 		elif x_speed < 0:
 			playerImage.flip_h = true
-
-	#print(is_jumping, " jumping")
-	#print(is_doubleJumping, " Doublejumping")
-	#print(is_moving, " Moving")
-	#print(is_wallsliding, " Wallsliding")
-	#print(is_sliding, " sliding")
-	#print(is_walljumping, " Walljumping")
-	#print(is_dashing, " dashing")
-	
-	
 	anim()
-	
 	update_state()
 	sliding_logic()
 	dash()
@@ -416,20 +297,13 @@ func _physics_process(delta):
 		y_speed += WALL_SLIDE_GRAVITY * delta #Действие гравитации
 		y_speed = min(y_speed, MAX_FALL_SPEED_WALL_SLIDE)
 		
-	velocity.x = x_speed
-	velocity.y = y_speed
+	velocityy.x = x_speed
+	velocityy.y = y_speed
 	
-	set_velocity(velocity)
+	set_velocity(velocityy)
 	set_up_direction(FLOOR)
 	move_and_slide()
-	velocity = velocity #можно и без записи в velocity, 
 	#но тогда персонаж будет резко слетать с платформ, а не плавно
-
-
-
-func _on__monetka():
-	#$звук_монетки.play()
-	pass
 
 
 func _on_coin_monetka():

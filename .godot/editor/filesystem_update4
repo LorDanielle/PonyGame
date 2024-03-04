@@ -1,3 +1,4 @@
 res://Wtf/default_env.tres
 res://TestLevel/MainTestScene.tscn
 res://player/FluttershyTestSprite.gd
+res://player/Fluttershy.tscn
